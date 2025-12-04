@@ -37,24 +37,31 @@ function valorTotalInventario() {
        let precoProduto = inventario[i].preco * inventario[i].stock;
        valorTotal += precoProduto;
     }
-    console.log(valorTotal);
+    console.log(`O valor total de investimento em stock é de ${valorTotal} euros.`);
     return valorTotal.toFixed(2);
-}
+};
+
+// Ponto 4. Limpeza de Stock:
 
 function limpezaStock() {
     for (let i=0; i<inventario.length; i++) {
-       if (inventario[i].stock == 0) {
-            inventario.splice(inventario[i], 1);
-       }
+         if (inventario[i].stock == 0) {
+            inventario.splice(i, 1);
+            }
     }
-}
+};
+
+// Ponto 5. Filtro de Categoria:
 
 function filtroCategoria(categoria) {
     for (let i=0; i<inventario.length; i++) {
-        
-        console.log(inventario[i]);
+        if (inventario[i].categoria === categoria) {
+            console.log(`Produtos da categoria "${categoria}":\n`);
+            console.log(inventario[i]);
+        }
     }
 };
+
 
 // Verificação do inventário completo
 
@@ -64,11 +71,15 @@ console.log(inventario);
 
 earbuds.actualizarPreco(21.99);
 
-// Ponto 3. Mostrar o valor Total do Inventário
+// Ponto 3. Mostrar o valor total do Inventário
 
 valorTotalInventario();
+
+// Ponto 4. Mostrar o total do Inventário sem o produto a zeros (rádio);
 
 limpezaStock();
 console.log(inventario);
 
-filtroCategoria("acessórios");
+// Ponto 5. Mostrar os produtos da categoria "som e vídeo";
+
+filtroCategoria("som e vídeo");
