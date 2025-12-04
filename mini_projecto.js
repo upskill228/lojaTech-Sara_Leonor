@@ -62,7 +62,24 @@ function filtroCategoria(categoria) {
     }
 };
 
+// Ponto 6. Produto "Premium":
+function produtoPremium() {
+    let precoMaximo = 0;
+    let produtoPremium;
+    for (let i=0; i<inventario.length; i++) {
+    
+        if (inventario[i].preco > precoMaximo) {
+            precoMaximo = inventario[i].preco;
+            produtoPremium = inventario[i];
+        }
+    }
+    console.log(`O produto premium é:\n`);
+    console.log(produtoPremium);
+};
 
+// Ponto 7. Repor Stock:
+function reporStock(nome, quantidade) {
+};
 // Verificação do inventário completo
 
 console.log(inventario);
@@ -83,3 +100,8 @@ console.log(inventario);
 // Ponto 5. Mostrar os produtos da categoria "som e vídeo";
 
 filtroCategoria("som e vídeo");
+
+// Ponto 6. Mostrar o produto premium do inventário;
+
+produtoPremium();
+
