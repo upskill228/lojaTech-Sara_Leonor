@@ -46,16 +46,6 @@ class Produto {
 
 
 
-let earbuds = new Produto (984879, "Earbuds", "Som e Vídeo", 19.99, 10);
-let radio = new Produto (813524, "Rádio", "Som e Vídeo", 24.99, 0);
-let maquinaFotografia = new Produto (763595, "Máquina fotográfica", "Fotografia e Drones", 74.99, 10);
-let cartaoMemoria = new Produto (666027, "cartão de memória 256GB", "Acessórios", 59.99, 20);
-let giraDiscosLenco = new Produto (113680, "Gira Discos LENCO", "Som e Vídeo", 114.99, 10);
-
-
-inventario = [];
-
-
 class Venda {
     constructor (produto) {
         this.produto = produto,
@@ -84,13 +74,6 @@ class Venda {
     }
 }
 
-
-let vendaEarbuds = new Venda(earbuds)
-let vendaRadio = new Venda (radio); 
-let vendaMaquinaFotografica = new Venda (maquinaFotografia);
-let vendaCartaoMemoria = new Venda (cartaoMemoria); 
-
-historicoVendas = []; 
 
 
 
@@ -152,21 +135,42 @@ function atualizacaoInventarioLoja (produtoNovo) {
 
 
 function main () {
+    let earbuds = new Produto (984879, "Earbuds", "Som e Vídeo", 19.99, 10);
+    let radio = new Produto (813524, "Rádio", "Som e Vídeo", 24.99, 0);
+    let maquinaFotografia = new Produto (763595, "Máquina fotográfica", "Fotografia e Drones", 74.99, 10);
+    let cartaoMemoria = new Produto (666027, "cartão de memória 256GB", "Acessórios", 59.99, 20);
+    let giraDiscosLenco = new Produto (113680, "Gira Discos LENCO", "Som e Vídeo", 114.99, 10);
+
+    inventario = [];
     inventario.push(earbuds, radio, maquinaFotografia,cartaoMemoria); 
     console.table(inventario); 
+
+    let vendaEarbuds = new Venda(earbuds)
+    let vendaRadio = new Venda (radio); 
+    let vendaMaquinaFotografica = new Venda (maquinaFotografia);
+    let vendaCartaoMemoria = new Venda (cartaoMemoria); 
+
+    historicoVendas = []; 
+
     earbuds.actualizarPreco(25.99); 
     radio.actualizarPreco (29.99); 
     cartaoMemoria.alteracaoPrecoSaldos(10); 
+
     valorTotalInventario(); 
+
     vendaCartaoMemoria.diminuirStock(historicoVendas, 5); 
     vendaCartaoMemoria.relatorio(); 
     vendaEarbuds.diminuirStock(historicoVendas, 9);
     vendaRadio.diminuirStock(historicoVendas, 1);
     vendaRadio.relatorio(); 
     atualizacaoInventarioLoja(giraDiscosLenco); 
+
     produtoPremium(); 
+
     valorTotalInventario(); 
+
     limpezaStock(); 
+    
     filtroCategoria("Som e Vídeo"); 
     radio.reporStock(10); 
 }
