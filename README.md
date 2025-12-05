@@ -210,6 +210,8 @@
 ![actualizarPreco-cores](https://github.com/user-attachments/assets/79c41a5c-e78f-43bf-ab0e-b3fcca3161de)
 
 
+![valorInventario-cores](https://github.com/user-attachments/assets/1db68f9e-2bf0-4f73-8e10-c02bd8d6825c)
+
 
 
 
