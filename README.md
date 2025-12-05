@@ -87,39 +87,39 @@
 
 ### Ponto 5: Filtro de Categoria - Listar apenas os produtos de uma categoria específica.
 
-    Utilizamos uma função que recebe como parâmetro uma categoria e fltra no inventário produtos dentro dessa categoria. Ao o fazer optamos por colocar os respetivos produtos desta categoria num array criado na função, para efeitos de visualização posterior, conseguindo ver todos os produtos da categoria selecionado juntos. 
-    Ao invés de ver um produto de cada vez (cumprindo o ciclo que percorre o array do inventário). 
+   Utilizamos uma função que recebe como parâmetro uma categoria e fltra no inventário produtos dentro dessa categoria. Ao o fazer optamos por colocar os respetivos produtos desta categoria num array criado na função, para efeitos de visualização posterior, conseguindo ver todos os produtos da categoria selecionado juntos. 
+   Ao invés de ver um produto de cada vez (cumprindo o ciclo que percorre o array do inventário). 
 
 ### Ponto 6: Produto "Premium" - Identificar e devolver os dados do produto mais caro.
 
-    Estabelecemos uma função que percorre o inventário e compara o preço de cada produto do array frente ao preço máximo anteriormente atribuido (iniciamos a zero e é a cada volta do ciclo substituido pelo maior valor do preço)
-    Determinamos qual o produto premium através do índice do produto com maior preço (definido antes). 
-    Fizemos console.log/impressão no ecrã do produto premium e acima de tudo retornamos esses dados como solicitado. 
+   Estabelecemos uma função que percorre o inventário e compara o preço de cada produto do array frente ao preço máximo anteriormente atribuido (iniciamos a zero e é a cada volta do ciclo substituido pelo maior valor do preço)
+   Determinamos qual o produto premium através do índice do produto com maior preço (definido antes). 
+   Fizemos console.log/impressão no ecrã do produto premium e acima de tudo retornamos esses dados como solicitado. 
 
 ### Ponto 7: Repor Stock - Adicionar unidades a um produto já existente.
 
-    Neste ponto optamos por criar esta função como método da classe Produto. Assim, passamos ao método a quantidade de unidades a repor e neste faz a soma às existente daquele produto atualizando o stock do mesmo. 
+   Neste ponto optamos por criar esta função como método da classe Produto. Assim, passamos ao método a quantidade de unidades a repor e neste faz a soma às existente daquele produto atualizando o stock do mesmo. 
 
 
 ### Ponto 8: Criatividade: Definam e implementem 3 operações adicionais úteis.
 
-    Primeira operação: Validar nível de stock de produto
+   Primeira operação: Validar nível de stock de produto
 
-    A primeira operação que definimos foi a criação do método de validação do nível de stock dentro da classe Produto.
+   A primeira operação que definimos foi a criação do método de validação do nível de stock dentro da classe Produto.
 
-    Neste método, fizemos a opção por duas ações:
-    - Saber se o stock do produto é nulo ou existe stock do produto
-    - Devolução de uma mensagem a reportar qualquer uma das duas alternativas
-    No caso, de stock ser nulo, optamos por transmitir uma mensagem usando (console.warm) para reforçar alerta de nível de stock
+   Neste método, fizemos a opção por duas ações:
+   - Saber se o stock do produto é nulo ou existe stock do produto
+   - Devolução de uma mensagem a reportar qualquer uma das duas alternativas
+   No caso, de stock ser nulo, optamos por transmitir uma mensagem usando (console.warm) para reforçar alerta de nível de stock
           
-    Consideramos uma terceira ação que seria a reposição automática dos níveis de stock para um nível mínimo (pre-estabelecido de X unidades). Contudo, optamos por não adicionar esta possibilidade, pois teria impacto imediato nos níveis de stock do produto e em contexto real, teria que haver um período de espera entre pedido realizado, chegada à loja e reposição do inventário do produto. 
+   Consideramos uma terceira ação que seria a reposição automática dos níveis de stock para um nível mínimo (pre-estabelecido de X unidades). Contudo, optamos por não adicionar esta possibilidade, pois teria impacto imediato nos níveis de stock do produto e em contexto real, teria que haver um período de espera entre pedido realizado, chegada à loja e reposição do inventário do produto. 
 
 
-    Segunda operação: Atualização do Inventário da Loja
+   Segunda operação: Atualização do Inventário da Loja
 
-    Nesta função que criamos permitimos a inclusão de produtos novos ao inventário da loja e o retorno do inventário atualizado à chamada da função. 
+   Nesta função que criamos permitimos a inclusão de produtos novos ao inventário da loja e o retorno do inventário atualizado à chamada da função. 
 
-    Antes do retorno do inventário optamos por fazer console.table para permitir melhor visualização do inventário. 
+   Antes do retorno do inventário optamos por fazer console.table para permitir melhor visualização do inventário. 
         
 ┌─────────┬────────┬───────────────────────────┬───────────────────────┬────────┬───────┐
 │ (index) │ id     │ nome                      │ categoria             │ preco  │ stock │
@@ -132,74 +132,73 @@
 └─────────┴────────┴───────────────────────────┴───────────────────────┴────────┴───────┘
 
 
-    Terceira operação: Alterar preço do produto em altura de Saldos 
+   Terceira operação: Alterar preço do produto em altura de Saldos 
 
-    A considerar opções de épocas de saldos (Black Friday, etc) fizemos a opção de adicionar este método à classe Produto.
-    Neste método um desconto é aplicado sobre o preço do produto. 
+   A considerar opções de épocas de saldos (Black Friday, etc) fizemos a opção de adicionar este método à classe Produto.
+   Neste método um desconto é aplicado sobre o preço do produto. 
     
-    Deixamos em aberto duas opções: 
-    - Na primeira se o desconto (como parâmetro) é passado como percentagem (p.e: 10%)
-    - Na segunda, se é passado como número decimal (p.e: 0.01)
-    (Não é necessário, sendo que temos controlo sobre o parâmetro a aplicar mas permitiu considerar diferentes alternativas e como estruturamos o código frente às mesmas)
+   Deixamos em aberto duas opções: 
+   - Na primeira se o desconto (como parâmetro) é passado como percentagem (p.e: 10%)
+   - Na segunda, se é passado como número decimal (p.e: 0.01)
+   (Não é necessário, sendo que temos controlo sobre o parâmetro a aplicar mas permitiu considerar diferentes alternativas e como estruturamos o código frente às mesmas)
 
-    Em ambas imprimimos uma mensagem com o preço atualizado do produto.
+   Em ambas imprimimos uma mensagem com o preço atualizado do produto.
 
 
 # Descrição do bug escolhido, justificação da relevância e de como solucionar
 
-    O bug escolhido por nós foi para o ponto 3 - Valor Total do Inventário - em que optamos por colocar erro no ciclo ao percorrer o array (inventário) ao colocar "i menor e IGUAL ao tamanho do array".
-    Ao fazermos isto dá erro, que validamos com o uso do debugger pois acaba por tentar cumprir um ciclo cujo índice atribuido (pela variável i do ciclo) não existe no array. 
-    O tamanho do array é superior em um pelo facto que on índices iniciam-se em 0. 
-    Ou seja um array de tamanho 4 (elementos), pressupõe elementos nos índices 0, 1, 2 e 3. 
-    Ao tentar entrar no ciclo com o índice 4 dá erro.
+   O bug escolhido por nós foi para o ponto 3 - Valor Total do Inventário - em que optamos por colocar erro no ciclo ao percorrer o array (inventário) ao colocar "i menor e IGUAL ao tamanho do array".
+   Ao fazermos isto dá erro, que validamos com o uso do debugger pois acaba por tentar cumprir um ciclo cujo índice atribuido (pela variável i do ciclo) não existe no array. 
+   O tamanho do array é superior em um pelo facto que on índices iniciam-se em 0. 
+   Ou seja um array de tamanho 4 (elementos), pressupõe elementos nos índices 0, 1, 2 e 3. 
+   Ao tentar entrar no ciclo com o índice 4 dá erro.
     
-    Assim, a retificação seria limitar com exclusivo menor que o tamanho (< array.length). 
+   Assim, a retificação seria limitar com exclusivo menor que o tamanho (< array.length). 
 
 # Função principal
 
-    Na aplicação está a função main na qual articulamos cada uma das funções desenvolvidas, mostrando a variabilidade do uso das mesmas. 
-    A única função a ser chamada na aplicação é a principal. 
+   Na aplicação está a função main na qual articulamos cada uma das funções desenvolvidas, mostrando a variabilidade do uso das mesmas. 
+   A única função a ser chamada na aplicação é a principal. 
 
+   function main () {
+   let earbuds = new Produto (984879, "Earbuds", "Som e Vídeo", 19.99, 10);
+   let radio = new Produto (813524, "Rádio", "Som e Vídeo", 24.99, 0);
+   let maquinaFotografia = new Produto (763595, "Máquina fotográfica", "Fotografia e Drones", 74.99, 10);
+   let cartaoMemoria = new Produto (666027, "cartão de memória 256GB", "Acessórios", 59.99, 20);
+   let giraDiscosLenco = new Produto (113680, "Gira Discos LENCO", "Som e Vídeo", 114.99, 10);
 
-    function main () {
-    let earbuds = new Produto (984879, "Earbuds", "Som e Vídeo", 19.99, 10);
-    let radio = new Produto (813524, "Rádio", "Som e Vídeo", 24.99, 0);
-    let maquinaFotografia = new Produto (763595, "Máquina fotográfica", "Fotografia e Drones", 74.99, 10);
-    let cartaoMemoria = new Produto (666027, "cartão de memória 256GB", "Acessórios", 59.99, 20);
-    let giraDiscosLenco = new Produto (113680, "Gira Discos LENCO", "Som e Vídeo", 114.99, 10);
+   inventario = [];
+   inventario.push(earbuds, radio, maquinaFotografia,cartaoMemoria); 
+   console.table(inventario); 
+   
+   let vendaEarbuds = new Venda(earbuds)
+   let vendaRadio = new Venda (radio); 
+   let vendaMaquinaFotografica = new Venda (maquinaFotografia);
+   let vendaCartaoMemoria = new Venda (cartaoMemoria); 
 
-    inventario = [];
-    inventario.push(earbuds, radio, maquinaFotografia,cartaoMemoria); 
-    console.table(inventario); 
+   historicoVendas = []; 
 
-    let vendaEarbuds = new Venda(earbuds)
-    let vendaRadio = new Venda (radio); 
-    let vendaMaquinaFotografica = new Venda (maquinaFotografia);
-    let vendaCartaoMemoria = new Venda (cartaoMemoria); 
+   earbuds.actualizarPreco(25.99); 
+   radio.actualizarPreco (29.99); 
+   cartaoMemoria.alteracaoPrecoSaldos(10); 
 
-    historicoVendas = []; 
+   valorTotalInventario(); 
 
-    earbuds.actualizarPreco(25.99); 
-    radio.actualizarPreco (29.99); 
-    cartaoMemoria.alteracaoPrecoSaldos(10); 
+   vendaCartaoMemoria.diminuirStock(historicoVendas, 5); 
+   vendaCartaoMemoria.relatorio(); 
+   vendaEarbuds.diminuirStock(historicoVendas, 9);
+   vendaRadio.diminuirStock(historicoVendas, 1);
+   vendaRadio.relatorio(); 
+   atualizacaoInventarioLoja(giraDiscosLenco); 
 
-    valorTotalInventario(); 
+   produtoPremium(); 
 
-    vendaCartaoMemoria.diminuirStock(historicoVendas, 5); 
-    vendaCartaoMemoria.relatorio(); 
-    vendaEarbuds.diminuirStock(historicoVendas, 9);
-    vendaRadio.diminuirStock(historicoVendas, 1);
-    vendaRadio.relatorio(); 
-    atualizacaoInventarioLoja(giraDiscosLenco); 
+   valorTotalInventario(); 
 
-    produtoPremium(); 
-
-    valorTotalInventario(); 
-
-    limpezaStock(); 
+   limpezaStock(); 
     
-    filtroCategoria("Som e Vídeo"); 
-    radio.reporStock(10); 
+   filtroCategoria("Som e Vídeo"); 
+   radio.reporStock(10); 
 }
 
 
