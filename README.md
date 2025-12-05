@@ -207,6 +207,7 @@
 # Fluxogramas
 
  
+![actualizarPreco-cores](https://github.com/user-attachments/assets/79c41a5c-e78f-43bf-ab0e-b3fcca3161de)
 
 
 
