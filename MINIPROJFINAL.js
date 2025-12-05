@@ -92,7 +92,7 @@ function valorTotalInventario() {
 
 
 function limpezaStock() {
-    for (let i = 0; i < inventario.length; i++) {
+    for (let i = inventario.length - 1; i >= 0; i--) {
          if (inventario[i].stock == 0) {
             inventario.splice(i, 1);
             }
