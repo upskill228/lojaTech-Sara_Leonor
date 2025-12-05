@@ -206,10 +206,13 @@
 
 # Fluxogramas
 
- 
+Fluxograma 1 - Com Tomada de Decisão ("Se")
 ![actualizarPreco-cores](https://github.com/user-attachments/assets/79c41a5c-e78f-43bf-ab0e-b3fcca3161de)
 
 
+
+
+Fluxograma 2 - Sem Tomada de Decisão
 ![valorInventario-cores](https://github.com/user-attachments/assets/1db68f9e-2bf0-4f73-8e10-c02bd8d6825c)
 
 
