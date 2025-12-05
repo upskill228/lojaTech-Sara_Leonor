@@ -153,13 +153,17 @@
    Ou seja um array de tamanho 4 (elementos), pressupõe elementos nos índices 0, 1, 2 e 3. 
    Ao tentar entrar no ciclo com o índice 4 dá erro.
     
-   Assim, a retificação seria limitar com exclusivo menor que o tamanho (< array.length). 
 
 
    <img width="1061" height="195" alt="Captura de ecrã 2025-12-05, às 10 33 09" src="https://github.com/user-attachments/assets/bd9902da-2da2-41a2-9e24-4631fd7a5e4f" />
 
 
    <img width="558" height="241" alt="Captura de ecrã 2025-12-05, às 10 37 17" src="https://github.com/user-attachments/assets/f477fab1-7d77-4dd6-9f1b-d4d7e7a9e2d9" />
+
+
+ Assim, a retificação seria limitar com exclusivo menor que o tamanho (< array.length). 
+
+ <img width="622" height="168" alt="Captura de ecrã 2025-12-05, às 10 38 48" src="https://github.com/user-attachments/assets/cd745189-fcd6-46f9-bd8c-e208b6abf2da" />
 
 
 
