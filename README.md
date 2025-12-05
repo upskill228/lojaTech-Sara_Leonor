@@ -155,6 +155,14 @@
     
    Assim, a retificação seria limitar com exclusivo menor que o tamanho (< array.length). 
 
+
+   <img width="1061" height="195" alt="Captura de ecrã 2025-12-05, às 10 33 09" src="https://github.com/user-attachments/assets/bd9902da-2da2-41a2-9e24-4631fd7a5e4f" />
+
+
+   <img width="558" height="241" alt="Captura de ecrã 2025-12-05, às 10 37 17" src="https://github.com/user-attachments/assets/f477fab1-7d77-4dd6-9f1b-d4d7e7a9e2d9" />
+
+
+
 # Função principal
 
    Na aplicação está a função main na qual articulamos cada uma das funções desenvolvidas, mostrando a variabilidade do uso das mesmas. 
