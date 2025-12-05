@@ -38,6 +38,7 @@ https://github.com/upskill228/lojaTech-Sara_Leonor
     
 
 # Passos para correr os ficheiros JS 
+Para correr esta aplicação basta correr a função principal que já inclui um exemplo (pelo menos) de cada uma das ações. Cada uma destas é explicada como foi criada e o propósito, nos passos seguintes. 
 
 ## Primeiro Passo: Criação das Estruturas Definidas
 ## Inventário, Classe Produto, Objectos do tipo produto
@@ -171,7 +172,7 @@ https://github.com/upskill228/lojaTech-Sara_Leonor
 # Função principal
 
    Na aplicação está a função main na qual articulamos cada uma das funções desenvolvidas, mostrando a variabilidade do uso das mesmas. 
-   A única função a ser chamada na aplicação é a principal. 
+   A única função a ser chamada na aplicação é a principal.
 
    function main () {
    let earbuds = new Produto (984879, "Earbuds", "Som e Vídeo", 19.99, 10);
