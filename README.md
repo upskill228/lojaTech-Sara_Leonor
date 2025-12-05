@@ -85,6 +85,7 @@ Para correr esta aplicação basta correr a função principal que já inclui um
 ### Ponto 4: Limpeza de Stock - Remover automaticamente produtos com 0 unidades.
 
    Para remover produtos do inventário com esta condicionante (stock == 0), criamos uma função que identifica produtos no inventário cuja stock seja igual a zero e aplicamos array.splice atribuindo o índice daquele objeto e removendo só um (o objeto em questão). 
+   Começamos o ciclo do fim ( i = inventario.length - 1), ou seja, no indice do último elemento do array. Ao usar splice() (caso fizemos da ordem inicial) iria alterar consequentemente o indice dos elementos (puxar os objetos para a posição do elemento removido, podendo causar erros e levar a que elementos não fossem verificados. 
 
 
 ### Ponto 5: Filtro de Categoria - Listar apenas os produtos de uma categoria específica.
