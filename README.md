@@ -133,6 +133,7 @@ Para correr esta aplicação basta correr a função principal que já inclui um
 │ 4       │ 113680 │ 'Gira Discos LENCO'       │ 'Som e Vídeo'         │ 114.99 │ 10    │
 └─────────┴────────┴───────────────────────────┴───────────────────────┴────────┴───────┘
 
+   Uma possibilidade extra que consideramos posteriormente seria também retirar produtos descontinuados por exemplo (através da criação da propriedade disponível: "true" ou "false")
 
    Terceira operação: Alterar preço do produto em altura de Saldos 
 
