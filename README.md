@@ -6,6 +6,7 @@
 "És o developer de uma loja de tecnologia. Precisas de construir o sistema que gere o armazém."
 
 ## Link repositório WEB 
+https://github.com/upskill228/lojaTech-Sara_Leonor
 
 # Escolha das Estruturas (Inventário e Histórico de Vendas)
 ## O Inventário 
