@@ -88,7 +88,7 @@ https://github.com/upskill228/lojaTech-Sara_Leonor
 
 ### Ponto 5: Filtro de Categoria - Listar apenas os produtos de uma categoria específica.
 
-   Utilizamos uma função que recebe como parâmetro uma categoria e fltra no inventário produtos dentro dessa categoria. Ao o fazer optamos por colocar os respetivos produtos desta categoria num array criado na função, para efeitos de visualização posterior, conseguindo ver todos os produtos da categoria selecionado juntos. 
+   Utilizamos uma função que recebe como parâmetro uma categoria e filtra no inventário produtos dentro dessa categoria. Ao o fazer optamos por colocar os respetivos produtos desta categoria num array criado na função, para efeitos de visualização posterior, conseguindo ver todos os produtos da categoria selecionado juntos. 
    Ao invés de ver um produto de cada vez (cumprindo o ciclo que percorre o array do inventário). 
 
 ### Ponto 6: Produto "Premium" - Identificar e devolver os dados do produto mais caro.
