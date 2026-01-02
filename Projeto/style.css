@@ -1,0 +1,212 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Patrick Hand";
+    color: black;
+}
+
+header{
+    width: 100vw;  
+}
+
+.cabecalhoSup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw; 
+    /* border: 2px solid black */
+}
+
+.imgcafe {
+    object-fit: cover;
+    border-radius: 2px;
+    height: 300px; 
+    width: 100vmax;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+a.menunav {
+    text-decoration: none;
+    color: black;
+}
+
+/* aside {
+    display: grid;
+    gap: 50px; 
+    grid-template-columns: 100px 1fr;
+    height: 300px;
+    /* grid-template-rows: 1fr; */
+    /* border: 2px solid black; */
+
+
+
+.primSeccao {
+    display: flex;
+    border: 2px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vmax;
+}
+
+
+.opcaoCompra {
+    display: flex;
+    flex-direction: column;
+}
+
+ .card {
+    display: grid; 
+    grid-template-columns: 200px 1fr; 
+    gap: 12px; 
+    border: 2px solid grey;
+    padding: 12px;
+    max-width: 500px;
+    min-height: 250px; height: auto; 
+    border-radius: 15px;
+ }
+
+
+ .infoProduto{
+    display: grid;
+    grid-template-rows: auto auto 1fr; 
+    gap: 5px;
+    min-width: 0; /* permite o texto encolher e quebrar */
+  }
+  
+  .product-description {
+    margin: 0;
+    overflow: hidden;
+    max-height: 3.6em;   /* ≈ 2 linhas (2 × line-height) */
+    line-height: 1.8;
+    transition: max-height 0.2s ease;
+  }
+  
+  /* Desktop: mais espaço */
+  @media (min-width: 678px) {
+    .product-description {
+      max-height: 5.4em; /* ≈ 3 linhas */
+    }
+  }
+
+
+
+.templatecard {
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%; 
+    height: 250px;  
+} 
+
+.image-wrapper {
+    position: relative;
+}
+
+.icon-addCart {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: black;
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.2);
+    cursor: pointer;
+}
+
+.icon-cart {
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.2);
+    cursor: pointer;
+    color: black;
+}
+
+.icon-info {
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.2);
+    cursor: pointer;
+    color: black;
+    font-size: 10px; 
+}
+
+.cartpanel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.2);
+    padding: 10px;
+    transition: right 0.3s ease;
+}
+
+.cartpanel.open {
+    right: 0; 
+}
+
+.cartheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ol.menu {
+    list-style: none;
+    display: none;
+    gap: 5px; 
+    margin: 0;
+    padding: 0;
+}
+
+div.gridPrincipal {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 120px 1fr;
+    gap:20px;
+    align-items: start;
+}
+
+.gridPrincipal h2{
+    margin-top: 20px;
+  }
+
+.gridPrincipal nav{
+    margin-top: 20px;
+}
+
+.gridPrincipal nav>div, .gridPrincipal nav>span {
+    width: 100%;
+}
+
+.gridPrincipal nav>div:hover{
+    background-color: lightgrey;
+}
+
+.selectedMenuItem {
+    background-color: lightgrey;
+}
+
+
+
+.menuCat.active ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.menuCat h2 {
+    display: none;
+}
+
+.menuCat.active h2 {
+    display: block;
+}

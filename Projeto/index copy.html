@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura:wght@300;400;600;800&family=Italiana:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style copy.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Central Perk</title>
+  </head>
+  <body>
+    <header>
+      <div aria-label="cabecalho" class="cabecalhoSup">
+        <button><i class="fa-solid fa-bars"></i></button>
+        <p><i class="fa-solid fa-person"></i>Arquiles Diaz</p>
+        <h1>COFFEE BREAK</h1>
+        <div aria-label="motorDePesquisa">
+          <label for="pesquisa">🔍</label>
+          <input id="pesquisa" type="text" placeholder="Pesquise aqui" />
+        </div>
+      </div>
+      <img
+        src="img/backgroundcafe.jpg"
+        alt="grãos de café em bancada de madeira"
+        title="Grãos de café"
+        class="imgcafe"
+      />
+    </header>
+    <main>
+      <section class="primSeccao">
+          <div aria-label="moradaCafe">
+            <h2>COFFEE BREAK</h2>
+            <p>
+              4.7 <i class="fa-regular fa-thumbs-up"></i> (251) €0.50 Delivery
+              Fee
+            </p>
+            <p>Avenida Herculano 314, Setúbal</p>
+            <p>2521-641, Azeitão</p>
+          </div>
+          <div aria-label="modoCompra" class="opcaoCompra">
+            <label for="delivery">Delivery</label>
+            <input
+              id="delivery"
+              type="radio"
+              name="purchase"
+              value="delivery"
+            />
+            <label for="pickup">Pick-up</label>
+            <input id="pickup" type="radio" name="purchase" value="pickup" />
+          </div>
+          <div aria-label="custoEntrega">
+            <p>€0.50 Delivery Fee</p>
+            <p>Other fees <i class="fa-solid fa-info"></i></p>
+          </div>
+          <div aria-label="tempoEntrega">
+            <p>22 min</p>
+            <p>Earliest arrival <i class="fa-solid fa-info"></i></p>
+          </div>
+      </section>
+
+      <div class="gridPrincipal">
+        <nav>
+          <div><a class="menunav" href>Menu</a></div>
+          <div><a class="menunav" href>Bebidas quentes</a></div>
+          <div><a class="menunav" href>Bebidas frias</a></div>
+          <div><a class="menunav" href>Frappucinos</a></div>
+          <div><a class="menunav" href>Combinados</a></div>
+          <div><a class="menunav" href>Basket</a></div>
+        </nav>
+        <div>
+          <ol aria-label="Bebidas Quentes" class="menu">
+            <li>
+              <div class="card">
+                <img
+                  src="/img/expresso.jpg"
+                  alt="cafe expresso"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Expresso</h3>
+                  <p>€0.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Esta bebida feita com grão de café torrado proveninete do
+                    Peru. Pode ser servido em dose simples ou dupla.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/capuccino.png"
+                  alt="cappucino"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Cappucino</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão de café Português, leite meio gordo ou
+                    vegetal (à escolha). Cobertura de flocos de chocolate em
+                    cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/chocoquente.jpg"
+                  alt="chocolate quente"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Chocolate Quente</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Com uma receita caseira, esta bebida oferece um intenso
+                    sabor a chocolate, misturado com leite à escolha.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/chocoquente.jpg"
+                  alt="chocolate quente"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Chocolate Quente</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Com uma receita caseira, esta bebida oferece um intenso
+                    sabor a chocolate, misturado com leite à escolha.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <ol aria-label="Bebidas Frias" class="menu">
+            <li>
+              <div class="card">
+                <img
+                  src="/img/cafefrio.jpg"
+                  alt="cafe expresso frio"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Expresso frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>Em dias de calor, trazemos esta opção de café frio.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/matchafrio.png"
+                  alt="matcha frio"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/matchamorango.png"
+                  alt="matcha morango"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/matchamorango.png"
+                  alt="matcha morango"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <ol aria-label="Pastelaria" class="menu">
+            <li>
+              <div class="card">
+                <img
+                  src="/img/muffinchoco.jpg"
+                  alt="muffin de chocolate"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/muffinblueberry.jpg"
+                  alt="muffinblueberry"
+                  width="100%"
+                  height="100%"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/croissant.jpg"
+                  alt="croissant"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img
+                  src="/img/croissant.jpg"
+                  alt="croissant"
+                  class="templatecard"
+                />
+                <div class="infoProduto">
+                  <h3>Matcha frio</h3>
+                  <p>€3.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                  <p>
+                    Feito com grão torrado de café Português, leite meio gordo
+                    ou vegetal (coco ou aveia), com creme em cima.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
