@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <script src="interacao.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura:wght@300;400;600;800&family=Italiana:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Central Perk</title>
+  </head>
+
+  <body>
+    <header>
+      <div aria-label="cabecalho" class="cabecalhoSup">
+        <button><i class="fa-solid fa-bars"></i></button>
+        <p><i class="fa-solid fa-person"></i>Arquiles Diaz</p>
+        <h1>COFFEE BREAK</h1>
+        <div aria-label="motorDePesquisa">
+          <label for="pesquisa">🔍</label>
+          <input id="pesquisa" type="text" placeholder="Pesquise aqui" />
+        </div>
+        <div id="basket" aria-label="carrinho">
+          <i class="fa-solid fa-basket-shopping icon-cart"></i>
+        </div>
+      </div>
+      <img
+        src="img/backgroundcafe.jpg"
+        alt="grãos de café em bancada de madeira"
+        title="Grãos de café"
+        class="imgcafe"
+      />
+    </header>
+    <main>
+      <section class="primSeccao">
+        <div aria-label="moradaCafe">
+          <h2>COFFEE BREAK</h2>
+          <p>
+            4.7 <i class="fa-regular fa-thumbs-up"></i> (251) €0.50 Delivery Fee
+          </p>
+          <p>Avenida Herculano 314, Setúbal</p>
+          <p>2521-641, Azeitão</p>
+        </div>
+        <div aria-label="modoCompra" class="opcaoCompra">
+          <label for="delivery">Delivery</label>
+          <input id="delivery" type="radio" name="purchase" value="delivery" />
+          <label for="pickup">Pick-up</label>
+          <input id="pickup" type="radio" name="purchase" value="pickup" />
+        </div>
+        <div aria-label="custoEntrega">
+          <p>€0.50 Delivery Fee</p>
+          <p>Other fees <i class="fa-solid fa-info icon-info"></i></p>
+        </div>
+        <div aria-label="tempoEntrega">
+          <p>22 min</p>
+          <p>Earliest arrival <i class="fa-solid fa-info icon-info"></i></p>
+        </div>
+      </section>
+      <section>
+        <div class="gridPrincipal">
+          <nav>
+            <span>O nosso menu</span>
+            <div><a class="menunav" id="quentes" href>Bebidas quentes</a></div>
+            <div><a class="menunav" id="frias" href>Bebidas frias</a></div>
+            <div><a class="menunav" id="pastelaria" href>Pastelaria</a></div>
+          </nav>
+          <div>
+            <div id="listaQuentes" class="menuCat active">
+              <h2>Bebidas Quentes</h2>
+              <ol aria-label="Bebidas Quentes" class="menu">
+                <li>
+                  <div class="card" data-id="expresso" data-name="Expresso" data-price="0.90">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/expresso.png"
+                        alt="cafe expresso"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Expresso</h3>
+                      <p>€0.90 <i class="fa-regular fa-heart"></i> 99% (71)</p>
+                      <p
+                        class="product-description"
+                        title="Esta bebida feita com grão de café torrado proveninete do Peru. Pode ser servido em dose simples ou dupla."
+                      >
+                        Esta bebida feita com grão de café torrado proveninete
+                        do Peru. Pode ser servido em dose simples ou dupla.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="cappucino" data-name="Cappucino" data-price="2.80">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/capuccino.png"
+                        alt="cappucino"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Cappucino</h3>
+                      <p>€2.80 <i class="fa-regular fa-heart"></i> 78% (63)</p>
+                      <p
+                        class="product-description"
+                        title="Feito com grão de café Português, leite meio gordo ou vegetal (à escolha). Cobertura de flocos de chocolate em cima."
+                      >
+                        Feito com grão de café Português, leite meio gordo ou
+                        vegetal (à escolha). Cobertura de flocos de chocolate em
+                        cima.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="chocolateQuente" data-name="Chocolate Quente" data-price="3.10">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/chocoquente.jpg"
+                        alt="chocolate quente"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Chocolate Quente</h3>
+                      <p>€3.10 <i class="fa-regular fa-heart"></i> 62% (62)</p>
+                      <p
+                        class="product-description"
+                        title="Com uma receita caseira, esta bebida oferece um intenso sabor a chocolate, misturado com leite à escolha."
+                      >
+                        Com uma receita caseira, esta bebida oferece um intenso
+                        sabor a chocolate, misturado com leite à escolha.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="mocha" data-name="Mocha" data-price="2.45">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/mocha.png"
+                        alt="mocha"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Mocha</h3>
+                      <p>€2.45 <i class="fa-regular fa-heart"></i> 82% (104)</p>
+                      <p
+                        class="product-description"
+                        title="Leite com chocolate, com um shot de expresso à mistura, servido com leite à escolha."
+                      >
+                        Leite com chocolate, com um shot de expresso à mistura,
+                        servido com leite à escolha.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="americano" data-name="Americano" data-price="2.50">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/americano.png"
+                        alt="americano"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Americano</h3>
+                      <p>€2.50 <i class="fa-regular fa-heart"></i> 47% (53)</p>
+                      <p
+                        class="product-description"
+                        title="Café Longo simples, misturado com água quente, pode ser servido com ou sem leite."
+                      >
+                        Café Longo simples, misturado com água quente, pode ser
+                        servido com ou sem leite.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="cha" data-name="Chá" data-price="1.55">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/cha.png"
+                        alt="cha"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Chá</h3>
+                      <p>€1.55 <i class="fa-regular fa-heart"></i> 80% (74)</p>
+                      <p
+                        class="product-description"
+                        title="Dispomos de uma uma variedade extensa de chás, veja o cárdapio para mais informação."
+                      >
+                        Dispomos de uma uma variedade extensa de chás, veja o
+                        cárdapio para mais informação.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div id="listaFrias" class="menuCat">
+              <h2>Bebidas Frias</h2>
+              <ol aria-label="Bebidas Frias" class="menu">
+                <li>
+                  <div class="card" data-id="expressoFrio" data-name="Expresso frio" data-price="1.10">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/cafefrio.jpg"
+                        alt="cafe expresso frio"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Expresso frio</h3>
+                      <p>€1.10 <i class="fa-regular fa-heart"></i> 72% (143)</p>
+                      <p
+                        class="product-description"
+                        title="Em dias de calor, trazemos esta opção de café frio servido com cubos de gelo."
+                      >
+                        Em dias de calor, trazemos esta opção de café frio servido com cubos de gelo.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="matchaFrio" data-name="Matcha Frio" data-price="3.00">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/matchafrio.png"
+                        alt="matcha frio"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Matcha frio</h3>
+                      <p>€3.00 <i class="fa-regular fa-heart"></i> 45% (50)</p>
+                      <p
+                        class="product-description"
+                        title="Uma alternativa saudável aos dias quentes, servido com leite vegetal à escolha."
+                      >
+                        Uma alternativa saudável aos dias quentes, servido com leite vegetal à escolha.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="matchaMorango" data-name="Matcha de morango" data-price="3.20">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/matchamorango.png"
+                        alt="matcha morango"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Matcha de morango</h3>
+                      <p>€3.20 <i class="fa-regular fa-heart"></i> 57% (68)</p>
+                      <p
+                        class="product-description"
+                        title="Adicionado morango e creme de morango à receita de matcha tradicional, 
+                        servido com cubos de gelo e leite vegetal à escolha. "
+                      >
+                        Adicionado morango e creme de morango à receita de matcha tradicional, 
+                        servido com cubos de gelo e leite vegetal à escolha. 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="americanoFrio" data-name="Café americano frio" data-price="2.30">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/americanofrio.png"
+                        alt="cafe americano com gelo"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3> Café americano frio</h3>
+                      <p>€2.30 <i class="fa-regular fa-heart"></i> 86% (117)</p>
+                      <p
+                        class="product-description"
+                        title=" Um café americano longo servido frio."
+                      >
+                        Um café americano longo servido frio.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="cappucinoFrio" data-name="Cappucino frio" data-price="2.50">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/cappucinofrio.png"
+                        alt="cappucino frio"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Cappucino frio</h3>
+                      <p>€2.50 <i class="fa-regular fa-heart"></i> 91% (123)</p>
+                      <p
+                        class="product-description"
+                        title="Idêntico à nossa receita tradicional do cappucino, acrescentado cubos de gelo
+                        e syrup de chocolate ou caramelo em cima."
+                      >
+                        Idêntico à nossa receita tradicional do cappucino, acrescentado cubos de gelo
+                        e syrup de chocolate ou caramelo em cima.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="galaoGelado" data-name="Galão com bola de gelado" data-price="2.95">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/galaoGelado.png"
+                        alt="galao com bola de gelado"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Galão com bola de gelado</h3>
+                      <p>€2.95 <i class="fa-regular fa-heart"></i> 91% (123)</p>
+                      <p
+                        class="product-description"
+                        title=" Receita da casa, um galão servido frio, com leite à escolha, 
+                        com bola de gelado e baunilha, syrup de caramelo, flocos de chocolate e creme."
+                      >
+                        Receita da casa, um galão servido frio, com leite à escolha, 
+                        com bola de gelado e baunilha, syrup de caramelo, flocos de chocolate e creme.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div id="listaPastelaria" class="menuCat">
+              <h2>Pastelaria</h2>
+              <ol aria-label="Pastelaria" class="menu">
+                <li>
+                  <div class="card" data-id="muffinChocolate" data-name="Muffin de chocolate" data-price="1.50">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/muffinchoco.jpg"
+                        alt="muffin de chocolate"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Muffin de chocolate</h3>
+                      <p>€1.50 <i class="fa-regular fa-heart"></i> 92% (210)</p>
+                      <p
+                        class="product-description"
+                        title="Muffins de chocolate, confecionados com uma receita caseira, chocolate preto 50% cacau e 
+                        açúcar de cana."
+                      >
+                        Muffins de chocolate, confecionados com uma receita caseira, chocolate preto 50% cacau e 
+                        açúcar de cana.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="muffinBlueberry" data-name="Muffin de blueberry" data-price="1.50">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/muffinblueberry.jpg"
+                        alt="muffin de blueberry"
+                        width="100%"
+                        height="100%"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Muffin de blueberry</h3>
+                      <p>€1.50 <i class="fa-regular fa-heart"></i> 89% (171)</p>
+                      <p
+                        class="product-description"
+                        title="Muffins de blueberry, confecionados com uma receita caseira, 
+                        blueberries directos da nossa horta e usado açúcar de cana."
+                      >
+                        Muffins de blueberry, confecionados com uma receita caseira, 
+                        blueberries directos da nossa horta e usado açúcar de cana.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="croissant" data-name="Croissant simples" data-price="1.35">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/croissant.jpg"
+                        alt="croissant folhado simples"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Croissant folhado simples</h3>
+                      <p>€1.35 <i class="fa-regular fa-heart"></i> 74% (82)</p>
+                      <p
+                        class="product-description"
+                        title="Croissant simples, folhado, com exterior estaladiço e 
+                      interior macio ideal para acompanhar um café ou chá."
+                      >
+                      Croissant simples, folhado, com exterior estaladiço e 
+                      interior macio ideal para acompanhar um café ou chá.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="croissantChocolate" data-name="Croissant folhado de Chocolate" data-price="1.85">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/croissantChoco.png"
+                        alt="croissant de chocolate"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Croissant folhado de Chocolate</h3>
+                      <p>€1.85 <i class="fa-regular fa-heart"></i> 78% (103)</p>
+                      <p
+                        class="product-description"
+                        title="Croissant folhado de chocolate, com exterior estaladiço e 
+                      interior com chocolate derretido ideal para pequeno-almoço ou lanche."
+                      >
+                      Croissant folhado de chocolate, com exterior estaladiço e 
+                      interior com chocolate derretido ideal para pequeno-almoço ou lanche.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="cinnamonRolls" data-name="Cinnamon rolls" data-price="2.20">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/cinnamonrolls.png"
+                        alt="cinnamon rolls"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Cinnamon rolls</h3>
+                      <p>€2.20 <i class="fa-regular fa-heart"></i> 63% (91)</p>
+                      <p
+                        class="product-description"
+                        title="Cinnamon rolls macios e aromáticos,  recheados com canela e açúcar,
+                      e cobertos com um delicado glaze que realça o sabor quente e reconfortante."
+                      >
+                      Cinnamon rolls macios e aromáticos,  recheados com canela e açúcar,
+                      e cobertos com um delicado glaze que realça o sabor quente e reconfortante.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-id="folhadosVariados" data-name="Folhados variados" data-price="2.50">
+                    <div class="image-wrapper">
+                      <img
+                        src="/img/folhadosVariados.png"
+                        alt="pastelaria folhada variados"
+                        class="templatecard"
+                      />
+                      <i class="fa-solid fa-plus icon-addCart"></i>
+                    </div>
+                    <div class="infoProduto">
+                      <h3>Folhados variados</h3>
+                      <p>€2.50 <i class="fa-regular fa-heart"></i> 94% (201)</p>
+                      <p
+                        class="product-description"
+                        title="Esta receita de folhados, com exterior estaladiço e interior amanteigado, 
+                      traz diferentes variações, com cobertura de chocolate negro, chocolate branco e creme de pistáchio."
+                      >
+                      Esta receita de folhados, com exterior estaladiço e interior amanteigado, 
+                      traz diferentes variações, com cobertura de chocolate negro, chocolate branco e creme de pistáchio.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside id="painelCarrinho" class="cartpanel">
+      <div class="cartheader">
+         <h2>O meu carrinho</h2>
+         <i class="fa-solid fa-xmark icon-cart" id="closeCart"></i>
+      </div>
+      <div id="cartcontent">
+
+      </div>
+    </aside>
+  </body>
+</html>
